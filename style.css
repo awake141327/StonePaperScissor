@@ -1,0 +1,116 @@
+html,body,h1 {
+  margin:0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.all-content {
+  padding:20px 0 5px 0;
+  background-color: #5d5463;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+input,img{
+  width:70px;
+}
+
+h1{
+  color:#d3eaee;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+button{
+  padding:7px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size:15px;
+  color: #5d5463;
+  font-weight: 900;
+  background: #d3eaee;
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+  background: white;
+}
+
+p{
+  color:#d3eaee;
+  text-decoration: underline;
+  max-width: 70%;
+  margin:0 auto;
+}
+
+h2{
+  letter-spacing: 5px;
+}
+
+input:hover, input:focus{
+  border:5px solid #d3eaee;
+  border-radius: 20px;
+  padding:10px;
+  box-sizing: border-box;
+  transition: border 100ms;
+}
+
+.player-1, .player-2{
+  color:#d3eaee;
+}
+
+.choice{
+  margin:0 auto;
+  width:80%;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.container{
+  display:none;
+}
+
+#playerPick{
+  margin-bottom:30px;
+}
+
+#warning {
+  display:none;
+}
+
+#youChose{
+  visibility: hidden;
+}
+
+#lockPick{
+  visibility: hidden;
+  margin:0;
+}
+
+#winner {
+  font-size: 30px;
+  color:#d3eaee;
+  font-variant: small-caps;
+  font-weight: 900;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+}
+
+@media (min-width:800px) {
+  h1{
+    font-size: 40px;
+  }
+  .container{
+    width: 70%;
+    margin:0 auto;
+  }
+  img, input{
+    width:110px
+  }
+}

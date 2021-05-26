@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Stone Paper Scissor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <main class="all-content">
+    <h1>Stone-Paper-Scissor</h1>
+    <button id="startBtn" type="button" name="button">Start Game</button>
+    <p id="warning">To play again just continue with your second choice.</p>
+
+    <div class="container" id="container">
+      <section class="player-1">
+        <h2 id="player1">PLAYER</h2>
+        <div class="choice">
+          <input id="rock" type="image" src="Rock.png" alt="Rock">
+          <input id="paper" type="image" src="Paper.png" alt="Paper">
+          <input id="scissor" type="image" src="Scissor.png" alt="Scissor">
+        </div>
+        <div class="pick">
+          <h2 id="youChose"></h2>
+          <div id="playerPick"></div>
+          <button id ="lockPick" type="button" name="button">Pick</button>
+        </div>
+      </section>
+
+      <div id="winner"></div>
+
+      <section class="player-2">
+        <div id="cpu-choice"></div>
+        <h2>CPU CHOSE</h2>
+        <div class="choice">
+          <img src="Scissor-Flip.png" alt="Scissor">
+          <img src="Paper-Flip.png" alt="Paper">
+          <img src="Rock-Flip.png" alt="Rock">
+        </div>
+        <h2 id="player2" class="no-margin">COMPUTER</h2>
+      </section>
+    </div>
+  </main>
+
+<script src="index.js"></script>
+
+</body>
+
+
+</html>
